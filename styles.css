@@ -1,0 +1,151 @@
+#nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  background-color: #99beef;
+  height: 3rem;
+  display: flex;
+  align-items: left;
+  top: 0;
+  left: 0;
+}
+header ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+}
+
+header img {
+  height: 100%;
+  position: absolute;
+  float: left;
+}
+
+header li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-section {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #a9a9a9;
+  left: 0;
+  top: 3rem;
+  width: 100%;
+  height: auto;
+}
+
+/* Newsletter*/
+.body-div-1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* Video */
+.body-div-2 {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Prices */
+.body-div-3 {
+  text-align: center;
+  padding-bottom: 40px;
+  display: grid;
+  padding-right: 20px;
+}
+.product-prices {
+  text-align: center;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  place-items: center;
+}
+
+.price-group {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border: 3px solid black;
+  padding: 7px;
+  height: auto;
+  max-width: 20rem;
+  min-height: 29rem;
+}
+
+.house-image {
+  width: 100%;
+  border-radius: 10px
+}
+
+#cape {
+}
+
+#colonial {
+}
+
+
+/* Specs */
+.body-div-4 {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-right: 20px;
+}
+
+.product-specs {
+  text-align: center;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  place-items: center;
+}
+
+.prod-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 3px solid black;
+  padding: 7px;
+  height: auto;
+  max-width: 20rem;
+  min-height: 25rem;
+  min-width: 10rem;
+  overflow: hidden;
+}
+
+p {
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (max-width: 560px) {
+.product-specs, .product-prices{
+  display: flex;
+  flex-direction: column
+}
+
+.prod-group, .price-group {
+  width: 90%;
+  min-height: 25rem;
+  }
+}
